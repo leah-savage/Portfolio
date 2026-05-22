@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parsons School of Design — Leah Savage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-name">Leah Savage</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+
+  <a href="index.html" class="detail-back fade-in">
+    <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>
+    All Work
+  </a>
+
+  <div class="detail-hero fade-in">
+    <h1 class="detail-title">Parsons School of Design</h1>
+    <div class="detail-meta">
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Year</span>
+        <span class="detail-meta-value">2025 – 2026</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Type</span>
+        <span class="detail-meta-value">MS-SDM: Strategic Design and Management</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-body fade-in">
+    <p>MS-SDM student at Parsons School of Design, applying systems thinking to design and strategy. Recent work includes partnering with Third Lane Micromobility to develop a product and service for non-traditional users and collaborating across New York City and Argentina on intergenerational models of urban living and care.</p>
+    <p>I work independently and in groups across projects from research to delivery, using an iterative process that is curious, imaginative, and focused.</p>
+    <p>Areas of study: Design research | product development | systems thinking | design technology | communications | collaborative practice and group facilitation | artificial intelligence and new technologies</p>
+
+    <h2>Selected Projects</h2>
+  </div>
+
+  <div class="project-grid fade-in">
+
+    <div class="project-item">
+      <img src="images/parsons-1.png" alt="External Engagement Studio — Third Lane Micromobility" />
+      <div class="project-overlay">
+        <div class="project-overlay-title">External Engagement Studio | Third Lane Micromobility</div>
+        <ul>
+          <li>Micromobility ridership skews 70% male and only 30% female; barriers of entry for women are perceived safety and product design.</li>
+          <li>Recommend centering safety and belonging; product improvements to accommodate carrying more items on bikes and scooters and community partnerships for artistic skin designs.</li>
+          <li><span class="callout">When you design for the most constrained user, you design for everyone.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="images/parsons-2.png" alt="Intergenerational Design" />
+      <div class="project-overlay">
+        <div class="project-overlay-title">Intergenerational Design</div>
+        <ul>
+          <li>While universities across the country face dropping attendance and income, people 55+ hold over 70% of the US's wealth and many will require retirement housing and care.</li>
+          <li>Care workers provide important work in society, yet many struggle to earn a reliable income and secure housing.</li>
+          <li>Through desk research, interviews, site visits, and close work with my professors, I developed a strategic case for intergenerational living movements and presented recommendations directly to stakeholders.</li>
+          <li><span class="callout">The value of intergenerational thinking extends far beyond housing and education — it can strengthen any movement or campaign.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <img src="images/parsons-3.png" alt="Project Facilitation and Collaborative Practice" />
+      <div class="project-overlay">
+        <div class="project-overlay-title">Project Facilitation & Collaborative Practice</div>
+        <ul>
+          <li>Consistently took a leadership role in a studio dedicated to collaborative practice.</li>
+          <li>Facilitated systems mapping, journey mapping, concept linking, and futurist workshops.</li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="project-item">
+      <img src="images/parsons-4.png" alt="New Business Models" />
+      <div class="project-overlay">
+        <div class="project-overlay-title">New Business Models</div>
+        <ul>
+          <li>Challenge: Design a new, profitable business with a focus on sustainability.</li>
+          <li>Think Depop meets Craigslist meets Etsy — a furniture sale and resale platform supporting local buyers and artists.</li>
+          <li>Users curate their home through the app; local artists can set up a shop without needing their own website or marketing presence.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+
+  <footer>
+    <p>© 2026 Leah Savage</p>
+    <a href="index.html">← Back to Work</a>
+  </footer>
+
+  <script>
+  document.querySelectorAll('.project-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      var isActive = this.classList.contains('active');
+      document.querySelectorAll('.project-item').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      if (!isActive) this.classList.add('active');
+    });
+  });
+</script>
+
+</main>
+</body>
+</html>

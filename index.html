@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leah Savage</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .work-grid .work-card { opacity: 0; transform: translateY(14px); animation: fadeUp 0.6s ease forwards; }
+    .work-grid .work-card:nth-child(1)  { animation-delay: 0.12s; }
+    .work-grid .work-card:nth-child(2)  { animation-delay: 0.18s; }
+    .work-grid .work-card:nth-child(3)  { animation-delay: 0.24s; }
+    .work-grid .work-card:nth-child(4)  { animation-delay: 0.30s; }
+    .work-grid .work-card:nth-child(5)  { animation-delay: 0.36s; }
+    .work-grid .work-card:nth-child(6)  { animation-delay: 0.42s; }
+    .work-grid .work-card:nth-child(7)  { animation-delay: 0.48s; }
+    .work-grid .work-card:nth-child(8)  { animation-delay: 0.54s; }
+    .work-grid .work-card:nth-child(9)  { animation-delay: 0.60s; }
+    .work-grid .work-card:nth-child(10) { animation-delay: 0.66s; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-name">Leah Savage</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+
+<div class="work-hero fade-in">
+  <p class="work-hero-statement">
+    I'm <span class="name">Leah Savage</span>, a design and communications strategist based in New York City.
+  </p>
+</div>
+
+  <div class="work-grid">
+
+   
+      <a href="work-01.html" class="work-card">
+  <div class="work-card-thumb">
+    <img src="images/work-01.jpg" alt="Parsons School of Design" />
+  </div>
+  <div class="work-card-info">
+    <div class="work-card-title">Parsons School of Design</div>
+    <div class="work-card-year">2025 - Current</div>
+  </div>
+</a>
+    </a>
+
+    <a href="work-02.html" class="work-card">
+      <div class="work-card-thumb">
+        <img src="images/work-02.png" alt="Project Title Two" />
+      </div>
+        <div class="work-card-info">
+    <div class="work-card-title">Vital Village Networks at Boston Medical Center</div>
+    <div class="work-card-year">2023 - Current</div>
+      </div>
+    </a>
+
+    <a href="work-03.html" class="work-card">
+       <div class="work-card-thumb">
+        <img src="images/work-03.png" alt="Project Title Two" />
+      </div>
+        <div class="work-card-info">
+    <div class="work-card-title">Data Visualization</div>
+    <div class="work-card-year">2026</div>
+      </div>
+    </a>
+
+      <a href="work-04.html" class="work-card">
+       <div class="work-card-thumb">
+        <img src="images/work-04.png" alt="Project Title Two" />
+      </div>
+        <div class="work-card-info">
+    <div class="work-card-title">Beecoming the Change</div>
+    <div class="work-card-year">2022</div>
+      </div>
+    </a>
+
+      <a href="work-05.html" class="work-card">
+       <div class="work-card-thumb">
+        <img src="images/work-05-cover2.png" alt="Project Title Two" />
+      </div>
+        <div class="work-card-info">
+    <div class="work-card-title">Academic Research</div>
+    <div class="work-card-year">2022</div>
+      </div>
+    </a>
+
+  
+
+  </div>
+
+  <footer>
+    <p>© 2026 Leah Savage</p>
+    <p>Design & Communications Strategist</p>
+  </footer>
+
+</main>
+
+<script>
+function initNav() {
+  const links = document.querySelectorAll('.nav-links a');
+  const current = window.location.pathname.split('/').pop() || 'index.html';
+  links.forEach(link => {
+    if (link.getAttribute('href') === current) link.classList.add('active');
+  });
+}
+document.addEventListener('DOMContentLoaded', initNav);
+</script>
+</body>
+</html>
